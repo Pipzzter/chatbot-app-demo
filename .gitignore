@@ -1,6 +1,7 @@
 # Ignore Python virtual environments
 venv/
 .env
+response.mp3
 
 # Ignore other common files
 *.pyc
