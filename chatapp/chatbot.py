@@ -1,4 +1,3 @@
-import markdown
 from openai import OpenAI
 import os
 
@@ -14,14 +13,6 @@ def chatbot(prompt):
         messages=[{"role": "user", "content": prompt}],
         stream=True  # Enable streaming
     )
-    #
-    # for chunk in response:
-    #     print(
-    #         chunk.choices[0].delta.content,
-    #         end="",
-    #         flush=True
-    #     )
-    #     content = chunk.choices[0].delta.content if chunk.choices[0].delta.content else ""
-    #     yield content
+
     return response
 
